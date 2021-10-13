@@ -2,7 +2,7 @@
 
 ## About
 
-OneTimePad or `onepad` is a simple tool that encrypts and decrypts files using a so called one time pad. That means that a key is randomly generated and then applied to the file. Without this key it is virtually impossible to decrypt the file.
+OneTimePad or `onepad` is a simple tool that encrypts and decrypts files using a so called [one time pad][wiki-otp]. That means that a key is randomly generated and then applied to the file. Without this key it is virtually impossible to decrypt the file.
 
 ## Usage
 
@@ -23,6 +23,13 @@ When encrypting, the key will be stored in the given directory with this format:
 
 When decrypting, the key file will be deleted after decrypting.
 
-# Installation
+## Installation
 
-You can either download one of the prebuild executables or download the source code and compile it yourself [here][]
+You can either download one of the prebuild executables or download the source code and compile it yourself [here][git-release].
+
+To build from source, just run `go build onepad.go`.
+
+To install it run `go install onepad.go`.
+
+[wiki-otp]: https://de.wikipedia.org/wiki/One-Time-Pad
+[git-release]: https://github.com/Flobii/one-time-pad/releases/
