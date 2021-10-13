@@ -17,11 +17,13 @@ The second argument (`keypath / keyfile`) can be two types of inputs:
 - a directory where the key will be stored
 - a file ending in `.key` where the key corresponding to the encrypted file is
 
-Depending on the type of input, the given file will either be encrypted (a `keypath` is given) or decrypted (a `.key` file is given).
+Depending on the type of input, the given file will either be encrypted (a `keypath`[^1] is given) or decrypted (a `.key` file is given).
 
 When encrypting, the key will be stored in the given directory with this format: `<filename>.key`.
 
 When decrypting, the key file will be deleted after decrypting.
+
+[^1]: It is recommended that the key is stored on a separate storage medium
 
 ## Installation
 
